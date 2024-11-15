@@ -31,8 +31,7 @@ const Services = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+              I offer a wide range of services to help you build, enhance, and optimize your digital presence. With years of experience in software engineering, front-end development, and design, I deliver high-quality solutions tailored to your unique needs{" "}
             </motion.p>
           </div>
           <motion.div

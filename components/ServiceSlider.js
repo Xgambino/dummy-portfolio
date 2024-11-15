@@ -22,29 +22,42 @@ import { Pagination, FreeMode } from "swiper";
 // service data
 const serviceData = [
   {
-    icon: <RxCrop />,
-    title: "Branding",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    icon: <RxDesktop />,
+    title: "Development",
+    description:
+      "I create scalable, responsive websites with modern technologies.",
   },
   {
     icon: <RxPencil2 />,
     title: "Design",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description:
+      "I offer consulting services for system design, code reviews, and feedback.",
   },
+
   {
-    icon: <RxDesktop />,
-    title: "Development",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    icon: <RxCrop />,
+    title: "Branding",
+    description:
+      "I create unique branding solutions to elevate your business identity.",
   },
+
   {
     icon: <RxReader />,
     title: "Copywriting",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description:
+      "I provide compelling copywriting services to engage and convert your audience.",
   },
   {
     icon: <RxRocket />,
     title: "SEO",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description:
+      "I optimize your website with SEO strategies to boost visibility and traffic.",
+  },
+  {
+    icon: <RxCrop />,
+    title: "Photography",
+    description:
+      "I offer professional photography and videography services for impactful visuals.",
   },
 ];
 
@@ -76,12 +89,14 @@ const ServiceSlider = () => {
               <div className="text-4xl text-accent mb-4">{item.icon}</div>
               {/* title & description  */}
               <div className="mb-8">
-                <div className="mb-2 text-lg">{item.title}</div>
-                <p className="max-w-[350px] leading-normal">{item.description}</p>
+                <div className="mb-2 text-base">{item.title}</div>
+                <p className="max-w-[250px] leading-normal">
+                  {item.description}
+                </p>
               </div>
               {/* arrow  */}
               <div className="text-3xl">
-                <RxArrowTopRight className="group-hover:rotate-45 group-hover:text-accent transition-all duration-300"/>
+                <RxArrowTopRight className="group-hover:rotate-45 group-hover:text-accent transition-all duration-300" />
               </div>
             </div>
           </SwiperSlide>
