@@ -134,7 +134,7 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            Hi, I am a former architect turned software engineer. With a foundation in design and problem-solving from my years in architecture, I bring a unique perspective to building user-focused digital experiences. <br/>Over the past 7 years, I’ve gradually transitioned into software engineering, blending creativity with code to craft seamless, intuitive solutions.
+            Hi, I am a former architect turned software engineer. With a foundation in design and problem-solving from my years in architecture, I bring a unique perspective to building user-focused digital experiences.
           </motion.p>
           {/* counters  */}
           <motion.div
@@ -142,7 +142,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="hidden md-flex md:max-w-xl xl:max-0 mb-8"
+            className="hidden md:flex md:max-w-xl xl:max-0 mb-8"
           >
             <div className="flex flex-1 xl:gap-x-6">
               {/* experience  */}
