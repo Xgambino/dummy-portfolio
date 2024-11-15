@@ -88,7 +88,7 @@ const Contact = () => {
           </motion.h2>
           {/* form */}
           <motion.form
-            onSubmit={handleSubmit} // Attach submit handler
+            onSubmit={handleSubmit} 
             variants={fadeIn("up", 0.6)}
             initial="hidden"
             animate="show"
@@ -101,7 +101,7 @@ const Contact = () => {
                 type="text" 
                 name="name" 
                 placeholder="Name" 
-                className={`input ${errors.name ? 'border-red-500' : ''}`} 
+                className={`input rounded-full ${errors.name ? 'border-red-500' : ''}`} 
                 value={formData.name}
                 onChange={handleChange}
               />
@@ -109,7 +109,7 @@ const Contact = () => {
                 type="email" 
                 name="email" 
                 placeholder="E-mail" 
-                className={`input ${errors.email ? 'border-red-500' : ''}`} 
+                className={`input rounded-full ${errors.email ? 'border-red-500' : ''}`} 
                 value={formData.email}
                 onChange={handleChange}
               />
@@ -121,7 +121,7 @@ const Contact = () => {
               type="text" 
               name="subject" 
               placeholder="Subject" 
-              className="input" 
+              className="input rounded-full" 
               value={formData.subject}
               onChange={handleChange}
             />
@@ -129,7 +129,7 @@ const Contact = () => {
             <textarea 
               name="message" 
               placeholder="Message" 
-              className={`textarea ${errors.message ? 'border-red-500' : ''}`} 
+              className={`textarea rounded-full ${errors.message ? 'border-red-500' : ''}`} 
               value={formData.message}
               onChange={handleChange}
             />

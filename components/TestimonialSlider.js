@@ -1,26 +1,26 @@
 // testimonial data
 const testimonialSlider = [
   {
-    image: "/t-avt-1.png",
-    name: "Anne Smith",
-    position: "Customer",
+    image: "/",
+    name: "Wairimu Monica",
+    position: "Business Lady",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "Mugambi helped optimize our legacy systems and provided great insights. His technical knowledge was solid.",
   },
-  {
-    image: "/t-avt-2.png",
-    name: "Jane Doe",
-    position: "Customer",
-    message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
-  },
-  {
-    image: "/t-avt-3.png",
-    name: "Jhon Doe",
-    position: "Customer",
-    message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
-  },
+  // {
+  //   image: "/t-avt-2.png",
+  //   name: "Jane Doe",
+  //   position: "Customer",
+  //   message:
+  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+  // },
+  // {
+  //   image: "/t-avt-3.png",
+  //   name: "Jhon Doe",
+  //   position: "Customer",
+  //   message:
+  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+  // },
 ];
 
 // import swiper react components
