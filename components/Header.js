@@ -13,11 +13,17 @@ const Header = () => {
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-y-6 py-8">
           {/* logo */}
-          <Link href={'/'}>
-            <Image src={"/logo.svg"} width={220} height={480} alt="" />
+          <Link href={"/"}>
+            <Image
+              src={"/logo.svg"}
+              width={220}
+              height={8}
+              alt=""
+              priority={true}
+            />
           </Link>
           {/* socials  */}
-          <Socials/>
+          <Socials />
         </div>
       </div>
     </header>
