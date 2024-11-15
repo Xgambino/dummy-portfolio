@@ -48,7 +48,7 @@ const Contact = () => {
     e.preventDefault();
     if (validateForm()) {
       // Proceed with form submission (send data to Formspree)
-      fetch('https://formspree.io/f/{your-form-id}', {
+      fetch('https://formspree.io/f/mzzbglgo', {
         method: 'POST',
         headers: {
           'Accept': 'application/json',
