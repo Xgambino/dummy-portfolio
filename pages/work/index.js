@@ -31,8 +31,7 @@ const Work = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+              Here is a showcase of my work, highlighting my expertise in creating responsive websites, user interfaces, and innovative digital solutions. Explore my projects to see how I bring ideas to life with precision and creativity.{" "}
             </motion.p>
           </div>
           <motion.div

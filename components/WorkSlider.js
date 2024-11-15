@@ -5,19 +5,19 @@ const workSlider = {
       images: [
         {
           title: "title",
-          path: "/thumb1.jpg",
+          path: "",
         },
         {
           title: "title",
-          path: "/thumb2.jpg",
+          path: "",
         },
         {
           title: "title",
-          path: "/thumb3.jpg",
+          path: "",
         },
         {
           title: "title",
-          path: "/thumb4.jpg",
+          path: "",
         },
       ],
     },
@@ -25,19 +25,19 @@ const workSlider = {
       images: [
         {
           title: "title",
-          path: "/thumb4.jpg",
+          path: "",
         },
         {
           title: "title",
-          path: "/thumb1.jpg",
+          path: "",
         },
         {
           title: "title",
-          path: "/thumb2.jpg",
+          path: "",
         },
         {
           title: "title",
-          path: "/thumb3.jpg",
+          path: "",
         },
       ],
     },
