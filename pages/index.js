@@ -37,10 +37,7 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            I started my career as an architect, where I developed a keen eye for design and functionality in physical spaces. Over the past seven years, I transitioned into front-end software development, blending my architectural background with new technical skills to create engaging digital experiences.
           </motion.p>
           {/* btn  */}
           <div className="flex justify-center xl:hidden relative">

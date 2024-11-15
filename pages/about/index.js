@@ -7,7 +7,7 @@ import {
   FaJs,
   FaReact,
   FaWordpress,
-  FaFigma,
+  FaBootstrap,
 } from "react-icons/fa";
 
 import {
@@ -15,41 +15,77 @@ import {
   SiFramer,
   SiAdobexd,
   SiAdobephotoshop,
+  SiArchicad,
+  SiAutodeskrevit,
+  SiSketchup,
+  SiAdobelightroom,
+  SiPython,
+  SiGithub,
+  SiTailwindcss,
 } from "react-icons/si";
 
+import { GiDeliveryDrone } from "react-icons/gi";
+import { TfiMicrosoft } from "react-icons/tfi";
 //  data
 const aboutData = [
   {
     title: "skills",
     info: [
       {
-        title: "Web Development",
+        title: "Programming Languages",
         icons: [
           <FaHtml5 />,
           <FaCss3 />,
           <FaJs />,
-          <FaReact />,
           <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
+          <SiPython />,
         ],
       },
       {
-        title: "UI/UX Design",
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        title: "Tools & Technologies",
+        icons:[<FaReact />, <SiFramer />, <FaWordpress /> ,<SiGithub />, <FaBootstrap />, <SiTailwindcss />],
+      },
+      {
+        title: "Design Softwares",
+        icons: [
+          <SiAdobexd />,
+          <SiAdobephotoshop />,
+          <SiAdobelightroom />,
+          <TfiMicrosoft />,
+          <SiAutodeskrevit />,
+          <SiArchicad />,
+          <SiSketchup />,
+        ],
       },
     ],
   },
   {
-    title: "awards",
+    title: "Education",
     info: [
       {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
+        title: " Kathigiri Primary School",
+        stage: "2009-2013",
+        grade: "A (407 marks)",
       },
       {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
+        title: " Mang'u High School",
+        stage: "2014-2017",
+        grade: "B- (53 points)",
+      },
+      {
+        title: "K.I.H.B.T.",
+        stage: "2018-2020",
+        grade: "Diploma",
+      },
+      {
+        title: "Moringa School",
+        stage: "2018-2020",
+        grade: "Certificate",
+      },
+      {
+        title: "U.S.I.U",
+        stage: "2024 - Present",
+        // grade: "Certificate",
       },
     ],
   },
@@ -57,36 +93,39 @@ const aboutData = [
     title: "experience",
     info: [
       {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
+        company: "Intern",
+        title: "Unlimited Design Solutions",
+        stage: "Aug 2019 -Dec 2019",
       },
       {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
+        company: "Assistant Architect",
+        title: "Pronak Construction L.T.D. ",
+        stage: "2020 - 2023",
       },
       {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
+        company: "Trainee",
+        title: "Moringa School",
+        stage: "2024",
       },
     ],
   },
-  {
-    title: "credentials",
-    info: [
-      {
-        title: "Web Development - ABC University, LA, CA",
-        stage: "2011",
-      },
-      {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
-      },
-      {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
-      },
-    ],
-  },
+  // {
+  //   title: "credentials",
+  //   info: [
+  //     {
+  //       title: "Web Development - ABC University, LA, CA",
+  //       stage: "2011",
+  //     },
+  //     {
+  //       title: "Computer Science Diploma - AV Technical Institute",
+  //       stage: "2009",
+  //     },
+  //     {
+  //       title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
+  //       stage: "2006",
+  //     },
+  //   ],
+  // },
 ];
 // components
 import Avatar from "../../components/Avatar";
@@ -134,7 +173,13 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            Hi, I am a former architect turned software engineer. With a foundation in design and problem-solving from my years in architecture, I bring a unique perspective to building user-focused digital experiences.
+            Hi,My name is{" "}
+            <span className="text-accent font-extrabold">
+              Muthuri Denis Mugambi
+            </span>{" "}
+            .I am a former architect turned software engineer. With a foundation
+            in design and problem-solving from my years in architecture, I bring
+            a unique perspective to building user-focused digital experiences.
           </motion.p>
           {/* counters  */}
           <motion.div
@@ -148,7 +193,7 @@ const About = () => {
               {/* experience  */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={10} duration={5} />+
+                  <CountUp start={0} end={6} duration={5} />+
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Years of Experience
@@ -157,7 +202,7 @@ const About = () => {
               {/* clients  */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={250} duration={5} />+
+                  <CountUp start={0} end={50} duration={5} />+
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Satisfied clients
@@ -166,21 +211,21 @@ const About = () => {
               {/* Projects  */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={650} duration={5} />+
+                  <CountUp start={0} end={20} duration={5} />+
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Finished Projects
                 </div>
               </div>
               {/* Awards  */}
-              <div className="relative flex-1">
+              {/* <div className="relative flex-1">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={8} duration={5} />+
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Winning awards
                 </div>
-              </div>
+              </div> */}
             </div>
           </motion.div>
         </div>
@@ -218,7 +263,11 @@ const About = () => {
                   {/* title  */}
                   <div className="font-light mb-2 md:mb-0">{item.title}</div>
                   <div className="hidden md:flex">-</div>
+                  <div className="hidden md:flex">{item.company}</div>
+                  {/* <div className="hidden md:flex">-</div> */}
                   <div className="hidden md:flex">{item.stage}</div>
+                  {/* <div className="hidden md:flex">-</div> */}
+                  <div className="hidden md:flex">{item.grade}</div>
                   <div className="flex gap-x-4">
                     {/* icons  */}
                     {item.icons?.map((icon, itemIndex) => {

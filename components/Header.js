@@ -17,7 +17,7 @@ const Header = () => {
             <Image
               src={"/logo.svg"}
               width={220}
-              height={8}
+              height={20}
               alt=""
               priority={true}
             />
