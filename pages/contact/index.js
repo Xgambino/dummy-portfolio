@@ -1,16 +1,16 @@
-import React, { useState } from "react"; 
-import { BsArrowRight } from "react-icons/bs"; 
-import { motion } from "framer-motion"; 
-import { fadeIn } from "../../variants"; 
+import React, { useState } from "react";
+import { BsArrowRight } from "react-icons/bs";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../variants";
 import Circles from "../../components/Circles";
 
 const Contact = () => {
   // State for form fields and errors
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
 
   const [errors, setErrors] = useState({});
@@ -31,7 +31,7 @@ const Contact = () => {
       newErrors.email = "Email address is invalid.";
     }
     if (!formData.message) newErrors.message = "Message is required.";
-    
+
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0; // Returns true if no errors
   };
@@ -41,26 +41,26 @@ const Contact = () => {
     e.preventDefault();
     if (validateForm()) {
       // Proceed with form submission (send data to Formspree)
-      fetch('https://formspree.io/f/mzzbglgo', {
-        method: 'POST',
+      fetch("https://formspree.io/f/mzzbglgo", {
+        method: "POST",
         headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json',
+          Accept: "application/json",
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       })
-      .then(response => {
-        if (response.ok) {
-          alert("Thank you for your message!");
-          setFormData({ name: '', email: '', subject: '', message: '' });
-          setErrors({});
-        } else {
+        .then((response) => {
+          if (response.ok) {
+            alert("Thank you for your message!");
+            setFormData({ name: "", email: "", subject: "", message: "" });
+            setErrors({});
+          } else {
+            alert("There was a problem with your submission.");
+          }
+        })
+        .catch(() => {
           alert("There was a problem with your submission.");
-        }
-      })
-      .catch(error => {
-        alert("There was a problem with your submission.");
-      });
+        });
     }
   };
 
@@ -82,7 +82,7 @@ const Contact = () => {
           </motion.h2>
           {/* form */}
           <motion.form
-            onSubmit={handleSubmit} 
+            onSubmit={handleSubmit}
             variants={fadeIn("up", 0.6)}
             initial="hidden"
             animate="show"
@@ -91,45 +91,54 @@ const Contact = () => {
           >
             {/* input form */}
             <div className="flex gap-x-6 w-full">
-              <input 
-                type="text" 
-                name="name" 
-                placeholder="Name" 
-                className={`input rounded-full ${errors.name ? 'border-red-500' : ''}`} 
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                className={`input rounded-full ${
+                  errors.name ? "border-red-500" : ""
+                }`}
                 value={formData.name}
                 onChange={handleChange}
               />
-              <input 
-                type="email" 
-                name="email" 
-                placeholder="E-mail" 
-                className={`input rounded-full ${errors.email ? 'border-red-500' : ''}`} 
+              <input
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                className={`input rounded-full ${
+                  errors.email ? "border-red-500" : ""
+                }`}
                 value={formData.email}
                 onChange={handleChange}
               />
             </div>
             {errors.name && <p className="text-red-500">{errors.name}</p>}
             {errors.email && <p className="text-red-500">{errors.email}</p>}
-            
-            <input 
-              type="text" 
-              name="subject" 
-              placeholder="Subject" 
-              className="input rounded-full" 
+
+            <input
+              type="text"
+              name="subject"
+              placeholder="Subject"
+              className="input rounded-full"
               value={formData.subject}
               onChange={handleChange}
             />
-            
-            <textarea 
-              name="message" 
-              placeholder="Message" 
-              className={`textarea rounded-full ${errors.message ? 'border-red-500' : ''}`} 
+
+            <textarea
+              name="message"
+              placeholder="Message"
+              className={`textarea text-center rounded-full ${
+                errors.message ? "border-red-500" : ""
+              }`}
               value={formData.message}
               onChange={handleChange}
             />
             {errors.message && <p className="text-red-500">{errors.message}</p>}
-            
-            <button type="submit" className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group">
+
+            <button
+              type="submit"
+              className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
+            >
               <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
                 Let's talk
               </span>
