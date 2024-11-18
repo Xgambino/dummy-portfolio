@@ -1,15 +1,8 @@
-// components
-import Circles from "/components/Circles";
-
-// icons
-import { BsArrowRight } from "react-icons/bs";
-
-// framer
-import { motion } from "framer-motion";
-
-// variants
-import { fadeIn } from "../../variants";
-import { useState } from "react";
+import React, { useState } from "react"; 
+import { BsArrowRight } from "react-icons/bs"; 
+import { motion } from "framer-motion"; 
+import { fadeIn } from "../../variants"; 
+import Circles from "../../components/Circles";
 
 const Contact = () => {
   // State for form fields and errors
@@ -73,6 +66,7 @@ const Contact = () => {
 
   return (
     <div className="h-full bg-primary/30">
+      <Circles />
       <div className="container mx-auto py-32 text-center xl:text-left flex items-center">
         {/* text & form */}
         <div className="flex flex-col w-full max-w-[700px] ">
