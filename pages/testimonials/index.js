@@ -19,6 +19,8 @@ const Testimonials = () => {
         >
           What clients <span className="text-accent">say.</span>
         </motion.h2>
+        {/* particles  */}
+        <ParticlesContainer />
         {/* slider  */}
         <motion.div
           variants={fadeIn("up", 0.4)}
