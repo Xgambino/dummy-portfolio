@@ -1,6 +1,6 @@
 // components
 import TestimonialSlider from "../../components/TestimonialSlider";
-
+import ParticlesContainer from "../../components/ParticlesContainer";
 // framer-motion
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
@@ -30,6 +30,7 @@ const Testimonials = () => {
         >
           <TestimonialSlider />
         </motion.div>
+        <ParticlesContainer />
       </div>
     </div>
   );

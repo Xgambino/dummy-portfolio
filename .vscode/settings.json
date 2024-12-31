@@ -1,4 +1,4 @@
 {
     "editor.colorDecoratorsActivatedOn": "click",
-    "editor.defaultColorDecorators": true
+    "editor.defaultColorDecorators": "auto"
 }

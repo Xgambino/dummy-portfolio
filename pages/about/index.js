@@ -6,6 +6,7 @@ import Circles from "../../components/Circles";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 import CountUp from "react-countup";
+import ParticlesContainer from "../../components/ParticlesContainer";
 
 const aboutData = [
   {
@@ -51,6 +52,8 @@ const About = () => {
   return (
     <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
       <Circles />
+      {/* particles  */}
+      <ParticlesContainer />
       <motion.div
         variants={fadeIn("right", 0.2)}
         initial="hidden"
