@@ -42,6 +42,7 @@ const aboutData = [
       { company: "Intern", title: "Unlimited Design Solutions", stage: "Aug 2019 -Dec 2019" },
       { company: "Assistant Architect", title: "Pronak Construction L.T.D.", stage: "2020 - 2023" },
       { company: "Trainee", title: "Moringa School", stage: "2024" },
+      { company: "Attachee", title: "AMREF Kenya", stage: "2025" },
     ],
   },
 ];

@@ -9,19 +9,19 @@ const workSlider = {
           link: "https://main--hakiproject.netlify.app/",
         },
         {
-          title: "",
-          path: "", // Added an example image path
-          link: "", // Added link to the project
+          title: "Cool Blog App",
+          path: "", 
+          link: "https://blog-group-i.vercel.app/", 
+        },
+        {
+          title: "Ovotox Africa",
+          path: "", 
+          link: "https://ovotoxafrica.com/", 
         },
         {
           title: "",
-          path: "", // Added an example image path
-          link: "", // Added link to the project
-        },
-        {
-          title: "",
-          path: "", // Added an example image path
-          link: "", // Added link to the project
+          path: "", 
+          link: "", 
         },
       ],
     },
@@ -29,23 +29,23 @@ const workSlider = {
       images: [
         {
           title: "",
-          path: "", // Added an example image path
-          link: "", // Added link to the project
+          path: "", 
+          link: "", 
         },
         {
           title: "",
-          path: "", // Added an example image path
-          link: "", // Added link to the project
+          path: "", 
+          link: "", 
         },
         {
           title: "",
-          path: "", // Added an example image path
-          link: "", // Added link to the project
+          path: "", 
+          link: "", 
         },
         {
           title: "",
-          path: "", // Added an example image path
-          link: "", // Added link to the project
+          path: "", 
+          link: "", 
         },
       ],
     },
