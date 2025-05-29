@@ -20,7 +20,7 @@ const workSlider = {
         },
         {
           title: "Maryann Kanyike Construction Consultants ",
-          path: "", 
+          path: "/thumb4.png", 
           link: "https://mkcc.netlify.app/", 
         },
       ],
