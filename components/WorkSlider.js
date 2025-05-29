@@ -19,9 +19,9 @@ const workSlider = {
           link: "https://ovotoxafrica.com/", 
         },
         {
-          title: "",
+          title: "Maryann Kanyike Construction Consultants ",
           path: "", 
-          link: "", 
+          link: "https://mkcc.netlify.app/", 
         },
       ],
     },
